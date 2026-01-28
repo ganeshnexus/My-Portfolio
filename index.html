@@ -11,42 +11,62 @@
 
 <body>
 
-    <!-- NAV -->
-    <header class="nav">
+
+
+    <!-- Navbar -->
+    <nav class="nav">
         <div class="nav-container">
 
             <div class="brand">
                 Ganesh Lakhani
             </div>
 
-            <nav class="nav-links">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#expertise">Expertise</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact" class="nav-cta">Connect</a>
-            </nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact" class="nav-cta">Connect</a></li>
+            </ul>
+
+            <!-- active indicator -->
+            <span class="nav-indicator"></span>
 
         </div>
-    </header>
+    </nav>
+
 
 
     <!-- HERO -->
     <section id="home" class="hero">
         <div class="hero-bg"></div>
 
+        <!-- Floating gradient orbs -->
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+
         <div class="hero-content">
-            <div class="hero-text">
-                <h1>Ganesh Lakhani</h1>
-                <h2><span id="typing"></span></h2>
-                <p>
-                    Operations and Sales leader driving IT staffing, workforce strategy,
-                    and high-performance recruitment organizations.
+            <div class="hero-text reveal">
+
+                <span class="hero-badge">Staffing • Operations • Leadership</span>
+
+                <h1 class="hero-title">
+                    Ganesh <span>Lakhani</span>
+                </h1>
+
+                <h2 class="hero-subtitle">
+                    <span id="typing"></span>
+                </h2>
+
+                <p class="hero-description">
+                    Driving scalable IT staffing operations, sales alignment,
+                    and high-performance recruitment teams across enterprise clients.
                 </p>
+
                 <div class="cta-group">
-                    <button class="cta-primary" onclick="scrollTo('contact')">
-                        <span>Connect With Me</span>
-                    </button>
+                    <a href="#contact" class="cta-primary">
+                        Let’s Work Together
+                    </a>
 
                     <a href="https://www.linkedin.com/in/ganesh-lakhani-55b25971/" target="_blank"
                         class="cta-secondary">
@@ -56,91 +76,108 @@
 
             </div>
 
-            <div class="hero-photo">
+            <div class="hero-photo reveal">
                 <img src="ganesh.jpg.jpeg" alt="Ganesh Lakhani">
                 <div class="photo-caption">
                     Operations & Staffing Leader
                 </div>
-
             </div>
         </div>
     </section>
-    <section class="exec-strip">
-        <p>
-            Trusted operations and staffing leader helping organizations scale talent,
-            optimize delivery, and build sustainable recruitment engines.
-        </p>
+
+
+    <section class="exec-strip reveal">
+        <div class="exec-strip-inner">
+            <span class="exec-eyebrow">Executive Snapshot</span>
+            <p class="exec-statement">
+                Trusted staffing and operations leader helping organizations
+                <span>scale talent</span>, optimize delivery,
+                and build <span>sustainable recruitment engines</span>.
+            </p>
+        </div>
     </section>
 
 
+
     <!-- STATS -->
-    <section class="stats">
-        <div class="stat">
+    <section class="stats reveal">
+        <div class="stat-card">
             <h3 data-count="14">0</h3>
-            <p>Years Experience</p>
+            <p>Years of Leadership</p>
         </div>
-        <div class="stat">
+
+        <div class="stat-card">
             <h3 data-count="500">0</h3>
-            <p>Placements</p>
+            <p>Successful Placements</p>
         </div>
-        <div class="stat">
+
+        <div class="stat-card">
             <h3 data-count="50">0</h3>
             <p>Enterprise Clients</p>
         </div>
     </section>
 
+
     <!-- ABOUT -->
     <section id="about" class="about-section reveal">
         <div class="about-grid">
 
+            <!-- LEFT CONTENT -->
             <div class="about-left">
-                <h2 class="section-eyebrow">About</h2>
-                <h3 class="about-title">
-                    Leadership Built on <span>Execution</span>, Scale, and Trust
-                </h3>
+                <span class="section-eyebrow">About Me</span>
 
-                <p>
-                    I am an Operations Manager at Soft Standard Solutions with 14+ years of experience in the US IT
-                    Staffing industry, responsible for end-to-end operations across recruitment, bench sales, payroll
-                    coordination, compliance, and delivery management.
+                <h2 class="about-title">
+                    Leadership built on
+                    <span>execution</span>, trust,
+                    and scale
+                </h2>
+
+                <p class="about-text">
+                    I am an Operations Manager with 14+ years of experience in the US IT
+                    staffing industry, leading end-to-end operations across recruitment,
+                    bench sales, delivery, compliance, and client management.
                 </p>
 
-                <p>
-                    Starting my career as a Bench Sales Recruiter, I’ve grown through leadership roles to managing
-                    operations at scale. This hands-on journey has given me a strong understanding of the staffing
-                    lifecycle—from sourcing and placements to consultant management, client coordination, and process
-                    governance. My leadership approach focuses on accountability, process discipline, team development,
-                    and results, while maintaining transparency and collaboration across departments.
+                <p class="about-text">
+                    I started my career hands-on in bench sales and grew into leadership
+                    roles by building teams, fixing broken processes, and delivering
+                    consistent results. That journey shaped my leadership style. I stay
+                    close to execution, set clear expectations, and focus on accountability
+                    without micromanagement.
                 </p>
 
-                <p>I am deeply passionate about the US IT staffing domain and continuously work toward building
-                    scalable operations, strong teams, and sustainable growth.
+                <p class="about-text">
+                    Today, I work closely with sales, recruiters, and leadership teams to
+                    scale staffing operations, strengthen client partnerships, and build
+                    sustainable delivery models that last.
                 </p>
 
-                <div class="about-highlights">
+                <div class="about-metrics">
                     <div>
-                        <strong>14+ Years</strong>
-                        <span>Leadership Experience</span>
+                        <strong>14+</strong>
+                        <span>Years Experience</span>
                     </div>
                     <div>
-                        <strong>Global</strong>
-                        <span>Delivery Exposure</span>
+                        <strong>500+</strong>
+                        <span>Placements</span>
                     </div>
                     <div>
-                        <strong>People-First</strong>
-                        <span>Leadership Style</span>
+                        <strong>50+</strong>
+                        <span>Enterprise Clients</span>
                     </div>
                 </div>
             </div>
 
+            <!-- RIGHT CARD -->
             <div class="about-right">
-                <div class="about-glass">
-                    <h4>What I’m Known For</h4>
+                <div class="about-card">
+                    <h3>What I’m Known For</h3>
                     <ul>
-                        <li>Building scalable recruitment operations</li>
-                        <li>Driving accountability through metrics and KPIs</li>
-                        <li>Strengthening long-term client partnerships</li>
-                        <li>Leading teams through growth and change</li>
+                        <li>Building scalable recruitment and delivery operations</li>
+                        <li>Aligning staffing strategy with sales and revenue goals</li>
+                        <li>Creating accountability through KPIs and clear ownership</li>
+                        <li>Developing strong leaders and high-performing teams</li>
+                        <li>Maintaining long-term enterprise client relationships</li>
                     </ul>
                 </div>
             </div>
@@ -149,20 +186,28 @@
     </section>
 
 
+
     <!-- EXPERTISE -->
     <section id="expertise" class="expertise-section reveal">
-        <h2 class="expertise-title">
-            Executive Expertise
-            <span>Where I Create Impact</span>
-        </h2>
+        <div class="expertise-header">
+            <span class="section-eyebrow">Executive Expertise</span>
+            <h2 class="expertise-title">
+                Where I create <span>measurable impact</span>
+            </h2>
+            <p class="expertise-intro">
+                My work sits at the intersection of staffing strategy, operations,
+                and revenue alignment. These are the areas where I consistently
+                drive outcomes.
+            </p>
+        </div>
 
         <div class="expertise-grid">
 
             <div class="expertise-card">
                 <h3>Staffing Strategy</h3>
                 <p>
-                    Designing workforce and hiring models that scale with business growth
-                    across contract, permanent, and hybrid engagements.
+                    Designing scalable workforce and hiring models across contract,
+                    contract-to-hire, and full-time engagements aligned to business growth.
                 </p>
             </div>
 
@@ -170,39 +215,39 @@
                 <h3>Operations Leadership</h3>
                 <p>
                     Building operational discipline through KPIs, performance metrics,
-                    and standardized delivery frameworks.
+                    standardized workflows, and delivery governance.
                 </p>
             </div>
 
             <div class="expertise-card">
-                <h3>Sales Alignment</h3>
+                <h3>Sales & Delivery Alignment</h3>
                 <p>
-                    Partnering with sales leadership to ensure delivery strategy directly
-                    supports revenue and client retention.
+                    Partnering with sales leadership to ensure recruiting strategy
+                    directly supports revenue, fulfillment speed, and retention.
                 </p>
             </div>
 
             <div class="expertise-card">
                 <h3>AI-Driven Hiring</h3>
                 <p>
-                    Using modern sourcing tools, automation, and analytics to
-                    improve hiring speed and candidate quality.
+                    Leveraging automation, analytics, and modern sourcing tools to
+                    improve hiring velocity and candidate quality.
                 </p>
             </div>
 
             <div class="expertise-card">
-                <h3>Client Partnerships</h3>
+                <h3>Enterprise Client Partnerships</h3>
                 <p>
-                    Building long-term enterprise relationships based on trust,
-                    transparency, and consistent execution.
+                    Building long-term relationships with enterprise clients through
+                    transparency, execution, and consistent delivery.
                 </p>
             </div>
 
             <div class="expertise-card">
-                <h3>Team Scaling</h3>
+                <h3>Team Scaling & Leadership</h3>
                 <p>
                     Hiring, mentoring, and leading high-performing recruitment teams
-                    through growth and transformation phases.
+                    through growth, change, and transformation.
                 </p>
             </div>
 
@@ -210,175 +255,650 @@
     </section>
 
 
+
     <!-- EXPERIENCE -->
     <section id="experience" class="experience-section reveal">
-        <h2 class="exp-title statement">
-            Experience That Scales Teams & Delivers Results
-        </h2>
 
-
+        <div class="experience-header">
+            <span class="section-eyebrow">Experience</span>
+            <h2 class="experience-title">
+                Experience that <span>scales teams</span> and
+                delivers results
+            </h2>
+            <p class="experience-intro">
+                A progression from hands-on execution to senior leadership,
+                focused on building scalable staffing operations and
+                long-term client success.
+            </p>
+        </div>
 
         <div class="experience-wrapper">
 
             <!-- ROLE 1 -->
             <div class="experience-card">
-                <div class="experience-header">
-                    <h3>Operations Manager</h3>
-                    <span>SoftStandard Solutions</span>
-                    <p class="duration">2024 – Present</p>
+                <div class="experience-top">
+                    <div>
+                        <h3>Operations Manager</h3>
+                        <span class="company">SoftStandard Solutions</span>
+                    </div>
+                    <span class="duration">2024 – Present</span>
                 </div>
 
-                <div class="experience-body">
-                    <p class="role-summary">
-                        Leading global IT staffing operations with full ownership of delivery,
-                        recruitment strategy, performance metrics, and client success.
-                    </p>
+                <p class="role-summary">
+                    Leading global IT staffing operations with ownership of recruitment,
+                    delivery performance, process governance, and enterprise client outcomes.
+                </p>
 
-                    <ul>
-                        <li>Own end-to-end operations for contract, contract-to-hire, and permanent staffing engagements
-                        </li>
-                        <li>Designed scalable recruitment frameworks aligned with sales and revenue objectives</li>
-                        <li>Implemented AI-driven sourcing, screening, and reporting workflows to improve efficiency
-                        </li>
-                        <li>Partner with sales, delivery, and executive leadership to ensure consistent client outcomes
-                        </li>
-                        <li>Drive recruiter performance through KPIs, dashboards, and quality benchmarks</li>
-                        <li>Ensure compliance with client, vendor, and regional hiring standards</li>
-                    </ul>
+                <ul class="experience-points">
+                    <li>Own end-to-end staffing operations across contract, C2H, and full-time engagements</li>
+                    <li>Designed scalable recruitment frameworks aligned with sales and revenue goals</li>
+                    <li>Implemented AI-driven sourcing, screening, and performance reporting workflows</li>
+                    <li>Partner closely with sales, delivery, and leadership to ensure consistent fulfillment</li>
+                    <li>Drive recruiter performance using KPIs, dashboards, and quality benchmarks</li>
+                    <li>Ensure compliance across clients, vendors, and regional hiring standards</li>
+                </ul>
 
-                    <div class="impact-tags">
-                        <span>Global Delivery</span>
-                        <span>AI Hiring</span>
-                        <span>Operational Excellence</span>
-                    </div>
+                <div class="impact-tags">
+                    <span>Global Operations</span>
+                    <span>AI Hiring</span>
+                    <span>Operational Excellence</span>
                 </div>
             </div>
 
             <!-- ROLE 2 -->
             <div class="experience-card">
-                <div class="experience-header">
-                    <h3>Regional Operations Manager</h3>
-                    <span>United Soft Solutions</span>
-                    <p class="duration">2020 – 2024</p>
+                <div class="experience-top">
+                    <div>
+                        <h3>Regional Operations Manager</h3>
+                        <span class="company">United Soft Solutions</span>
+                    </div>
+                    <span class="duration">2020 – 2024</span>
                 </div>
 
-                <div class="experience-body">
-                    <p class="role-summary">
-                        Directed multi-region staffing operations, overseeing recruitment teams,
-                        delivery strategy, and enterprise client relationships.
-                    </p>
+                <p class="role-summary">
+                    Directed multi-region staffing operations, leading recruitment teams
+                    and strengthening enterprise client relationships.
+                </p>
 
-                    <ul>
-                        <li>Led recruitment and delivery operations across multiple US regions</li>
-                        <li>Built, mentored, and scaled high-performing recruitment teams</li>
-                        <li>Standardized hiring, onboarding, and client engagement processes</li>
-                        <li>Worked closely with executive leadership on regional growth strategy</li>
-                        <li>Strengthened long-term enterprise client partnerships through consistent delivery</li>
-                        <li>Improved operational efficiency and team productivity year over year</li>
-                    </ul>
+                <ul class="experience-points">
+                    <li>Led recruitment and delivery operations across multiple US regions</li>
+                    <li>Built, mentored, and scaled high-performing recruiting teams</li>
+                    <li>Standardized hiring, onboarding, and client engagement processes</li>
+                    <li>Worked with executive leadership on regional growth strategy</li>
+                    <li>Improved delivery efficiency and team productivity year over year</li>
+                </ul>
 
-                    <div class="impact-tags">
-                        <span>Regional Leadership</span>
-                        <span>Team Scaling</span>
-                        <span>Process Optimization</span>
-                    </div>
+                <div class="impact-tags">
+                    <span>Regional Leadership</span>
+                    <span>Team Scaling</span>
+                    <span>Process Optimization</span>
                 </div>
             </div>
 
             <!-- ROLE 3 -->
             <div class="experience-card">
-                <div class="experience-header">
-                    <h3>Sales Manager</h3>
-                    <span>Insight Intelli Inc</span>
-                    <p class="duration">2017 – 2020</p>
+                <div class="experience-top">
+                    <div>
+                        <h3>Sales Manager</h3>
+                        <span class="company">Insight Intelli Inc</span>
+                    </div>
+                    <span class="duration">2017 – 2020</span>
                 </div>
 
-                <div class="experience-body">
-                    <p class="role-summary">
-                        Drove new business acquisition and enterprise account expansion
-                        within IT staffing and consulting services.
-                    </p>
+                <p class="role-summary">
+                    Drove enterprise and mid-market sales growth for IT staffing
+                    and consulting services.
+                </p>
 
-                    <ul>
-                        <li>Led enterprise and mid-market sales initiatives for staffing services</li>
-                        <li>Expanded key accounts through consultative and solution-based selling</li>
-                        <li>Partnered with delivery teams to ensure successful fulfillment and retention</li>
-                        <li>Played a key role in revenue growth and long-term account stability</li>
-                        <li>Established strong client relationships built on trust and execution</li>
-                    </ul>
+                <ul class="experience-points">
+                    <li>Led new business acquisition and account expansion initiatives</li>
+                    <li>Expanded enterprise accounts through consultative selling</li>
+                    <li>Partnered with delivery teams to ensure fulfillment and retention</li>
+                    <li>Played a key role in revenue growth and account stability</li>
+                </ul>
 
-                    <div class="impact-tags">
-                        <span>Revenue Growth</span>
-                        <span>Enterprise Sales</span>
-                        <span>Client Partnerships</span>
-                    </div>
+                <div class="impact-tags">
+                    <span>Enterprise Sales</span>
+                    <span>Revenue Growth</span>
+                    <span>Client Partnerships</span>
                 </div>
             </div>
 
             <!-- ROLE 4 -->
             <div class="experience-card">
-                <div class="experience-header">
-                    <h3>Bench Sales Consultant</h3>
-                    <span>Scadea Solutions, Inc</span>
-                    <p class="duration">April 2013 – February 2015</p>
+                <div class="experience-top">
+                    <div>
+                        <h3>Bench Sales Consultant</h3>
+                        <span class="company">Scadea Solutions, Inc</span>
+                    </div>
+                    <span class="duration">2013 – 2015</span>
                 </div>
 
-                <div class="experience-body">
-                    <p class="role-summary">
-                        Played a key role in bench sales operations, consultant marketing,
-                        and client coordination within a fast-paced IT staffing environment.
-                    </p>
+                <p class="role-summary">
+                    Managed consultant marketing, bench utilization, and client coordination
+                    within a fast-paced IT staffing environment.
+                </p>
 
-                    <ul>
-                        <li>Managed end-to-end bench sales activities for IT consultants across multiple technologies
-                        </li>
-                        <li>Marketed consultant profiles to system integrators, vendors, and direct clients</li>
-                        <li>Built and maintained strong relationships with recruiters, account managers, and partners
-                        </li>
-                        <li>Coordinated interview scheduling, feedback loops, and offer negotiations</li>
-                        <li>Maintained accurate pipeline tracking and consultant availability reports</li>
-                        <li>Supported revenue growth by ensuring maximum bench utilization</li>
-                    </ul>
+                <ul class="experience-points">
+                    <li>Handled end-to-end bench sales for consultants across multiple technologies</li>
+                    <li>Marketed profiles to vendors, integrators, and direct clients</li>
+                    <li>Coordinated interviews, feedback cycles, and offer negotiations</li>
+                    <li>Maintained accurate consultant availability and pipeline reports</li>
+                </ul>
 
-                    <div class="impact-tags">
-                        <span>Bench Sales</span>
-                        <span>Consultant Marketing</span>
-                        <span>Client Coordination</span>
+                <div class="impact-tags">
+                    <span>Bench Sales</span>
+                    <span>Consultant Marketing</span>
+                    <span>Client Coordination</span>
+                </div>
+            </div>
+
+            <!-- ROLE 5 -->
+            <div class="experience-card">
+                <div class="experience-top">
+                    <div>
+                        <h3>Senior Sales Representative</h3>
+                        <span class="company">Air Hub</span>
+                    </div>
+                    <span class="duration">2012 – 2013</span>
+                </div>
+
+                <p class="role-summary">
+                    Supported business development and enterprise sales
+                    for telecom and value-added service solutions.
+                </p>
+
+                <ul class="experience-points">
+                    <li>Drove sales for voice, data, and telecom value-added services</li>
+                    <li>Engaged enterprise and SME clients to understand business needs</li>
+                    <li>Presented tailored solutions aligned with client requirements</li>
+                    <li>Supported pre-sales discussions and solution positioning</li>
+                </ul>
+
+                <div class="impact-tags">
+                    <span>Enterprise Sales</span>
+                    <span>Telecom Solutions</span>
+                    <span>Client Acquisition</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section reveal">
+        <div class="contact-container">
+
+            <div class="contact-left">
+                <h2>Let’s Connect</h2>
+                <p class="contact-intro">
+                    I’m always open to strategic conversations, partnerships,
+                    and leadership opportunities in IT staffing and operations.
+                </p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="label">Email</span>
+                        <a href="mailto:ganesh.lakhani4@gmail.com">
+                            ganesh.lakhani4@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/ganesh-lakhani-55b25971/" target="_blank">
+                            https://www.linkedin.com/in/ganesh-lakhani-55b25971/
+                        </a>
                     </div>
                 </div>
             </div>
 
+            <div class="contact-right">
+                <div class="contact-card">
+                    <h3>Start a Conversation</h3>
+                    <p>
+                        If you’re looking to scale teams, optimize staffing strategy,
+                        or explore collaboration, let’s talk.
+                    </p>
+                    <a href="mailto:ganesh.lakhani4@gmail.com" class="contact-cta">
+                        Send Email
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
-            <!-- ROLE 5 -->
+    <footer>© 2026 Ganesh Lakhani</footer>
 
-            <div class="experience-card">
-                <div class="experience-header">
-                    <h3>Senior Sales Representative</h3>
-                    <span>Air Hub</span>
-                    <p class="duration">January 2012 – January 2013</p>
+    <script src="script.js"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ganesh Lakhani | Staffing & Operations Leader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="nav-container">
+
+            <div class="brand">
+                Ganesh Lakhani
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact" class="nav-cta">Connect</a></li>
+            </ul>
+
+            <!-- active indicator -->
+            <span class="nav-indicator"></span>
+
+        </div>
+    </nav>
+
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+
+        <!-- Floating gradient orbs -->
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+
+        <div class="hero-content">
+            <div class="hero-text reveal">
+
+                <span class="hero-badge">Staffing • Operations • Leadership</span>
+
+                <h1 class="hero-title">
+                    Ganesh <span>Lakhani</span>
+                </h1>
+
+                <h2 class="hero-subtitle">
+                    <span id="typing"></span>
+                </h2>
+
+                <p class="hero-description">
+                    Driving scalable IT staffing operations, sales alignment,
+                    and high-performance recruitment teams across enterprise clients.
+                </p>
+
+                <div class="cta-group">
+                    <a href="#contact" class="cta-primary">
+                        Let’s Work Together
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ganesh-lakhani-55b25971/" target="_blank"
+                        class="cta-secondary">
+                        View LinkedIn →
+                    </a>
                 </div>
 
-                <div class="experience-body">
-                    <p class="role-summary">
-                        Contributed to business development and sales growth for telecom
-                        and value-added service solutions across enterprise and SME clients.
-                    </p>
+            </div>
 
-                    <ul>
-                        <li>Drove sales for voice, data, and value-added telecom services</li>
-                        <li>Engaged enterprise, SME, and institutional clients to identify business needs</li>
-                        <li>Presented customized solutions aligned with client operational requirements</li>
-                        <li>Supported pre-sales discussions, solution positioning, and proposal coordination</li>
-                        <li>Collaborated with technical and support teams to ensure smooth delivery</li>
-                        <li>Helped expand market presence through relationship-based selling</li>
-                    </ul>
+            <div class="hero-photo reveal">
+                <img src="ganesh.jpg.jpeg" alt="Ganesh Lakhani">
+                <div class="photo-caption">
+                    Operations & Staffing Leader
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="impact-tags">
-                        <span>Enterprise Sales</span>
-                        <span>Telecom Solutions</span>
-                        <span>Client Acquisition</span>
+
+    <section class="exec-strip reveal">
+        <div class="exec-strip-inner">
+            <span class="exec-eyebrow">Executive Snapshot</span>
+            <p class="exec-statement">
+                Trusted staffing and operations leader helping organizations
+                <span>scale talent</span>, optimize delivery,
+                and build <span>sustainable recruitment engines</span>.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- STATS -->
+    <section class="stats reveal">
+        <div class="stat-card">
+            <h3 data-count="14">0</h3>
+            <p>Years of Leadership</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 data-count="500">0</h3>
+            <p>Successful Placements</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 data-count="50">0</h3>
+            <p>Enterprise Clients</p>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section reveal">
+        <div class="about-grid">
+
+            <!-- LEFT CONTENT -->
+            <div class="about-left">
+                <span class="section-eyebrow">About Me</span>
+
+                <h2 class="about-title">
+                    Leadership built on
+                    <span>execution</span>, trust,
+                    and scale
+                </h2>
+
+                <p class="about-text">
+                    I am an Operations Manager with 14+ years of experience in the US IT
+                    staffing industry, leading end-to-end operations across recruitment,
+                    bench sales, delivery, compliance, and client management.
+                </p>
+
+                <p class="about-text">
+                    I started my career hands-on in bench sales and grew into leadership
+                    roles by building teams, fixing broken processes, and delivering
+                    consistent results. That journey shaped my leadership style. I stay
+                    close to execution, set clear expectations, and focus on accountability
+                    without micromanagement.
+                </p>
+
+                <p class="about-text">
+                    Today, I work closely with sales, recruiters, and leadership teams to
+                    scale staffing operations, strengthen client partnerships, and build
+                    sustainable delivery models that last.
+                </p>
+
+                <div class="about-metrics">
+                    <div>
+                        <strong>14+</strong>
+                        <span>Years Experience</span>
                     </div>
+                    <div>
+                        <strong>500+</strong>
+                        <span>Placements</span>
+                    </div>
+                    <div>
+                        <strong>50+</strong>
+                        <span>Enterprise Clients</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT CARD -->
+            <div class="about-right">
+                <div class="about-card">
+                    <h3>What I’m Known For</h3>
+                    <ul>
+                        <li>Building scalable recruitment and delivery operations</li>
+                        <li>Aligning staffing strategy with sales and revenue goals</li>
+                        <li>Creating accountability through KPIs and clear ownership</li>
+                        <li>Developing strong leaders and high-performing teams</li>
+                        <li>Maintaining long-term enterprise client relationships</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- EXPERTISE -->
+    <section id="expertise" class="expertise-section reveal">
+        <div class="expertise-header">
+            <span class="section-eyebrow">Executive Expertise</span>
+            <h2 class="expertise-title">
+                Where I create <span>measurable impact</span>
+            </h2>
+            <p class="expertise-intro">
+                My work sits at the intersection of staffing strategy, operations,
+                and revenue alignment. These are the areas where I consistently
+                drive outcomes.
+            </p>
+        </div>
+
+        <div class="expertise-grid">
+
+            <div class="expertise-card">
+                <h3>Staffing Strategy</h3>
+                <p>
+                    Designing scalable workforce and hiring models across contract,
+                    contract-to-hire, and full-time engagements aligned to business growth.
+                </p>
+            </div>
+
+            <div class="expertise-card">
+                <h3>Operations Leadership</h3>
+                <p>
+                    Building operational discipline through KPIs, performance metrics,
+                    standardized workflows, and delivery governance.
+                </p>
+            </div>
+
+            <div class="expertise-card">
+                <h3>Sales & Delivery Alignment</h3>
+                <p>
+                    Partnering with sales leadership to ensure recruiting strategy
+                    directly supports revenue, fulfillment speed, and retention.
+                </p>
+            </div>
+
+            <div class="expertise-card">
+                <h3>AI-Driven Hiring</h3>
+                <p>
+                    Leveraging automation, analytics, and modern sourcing tools to
+                    improve hiring velocity and candidate quality.
+                </p>
+            </div>
+
+            <div class="expertise-card">
+                <h3>Enterprise Client Partnerships</h3>
+                <p>
+                    Building long-term relationships with enterprise clients through
+                    transparency, execution, and consistent delivery.
+                </p>
+            </div>
+
+            <div class="expertise-card">
+                <h3>Team Scaling & Leadership</h3>
+                <p>
+                    Hiring, mentoring, and leading high-performing recruitment teams
+                    through growth, change, and transformation.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience-section reveal">
+
+        <div class="experience-header">
+            <span class="section-eyebrow">Experience</span>
+            <h2 class="experience-title">
+                Experience that <span>scales teams</span> and
+                delivers results
+            </h2>
+            <p class="experience-intro">
+                A progression from hands-on execution to senior leadership,
+                focused on building scalable staffing operations and
+                long-term client success.
+            </p>
+        </div>
+
+        <div class="experience-wrapper">
+
+            <!-- ROLE 1 -->
+            <div class="experience-card">
+                <div class="experience-top">
+                    <div>
+                        <h3>Operations Manager</h3>
+                        <span class="company">SoftStandard Solutions</span>
+                    </div>
+                    <span class="duration">2024 – Present</span>
+                </div>
+
+                <p class="role-summary">
+                    Leading global IT staffing operations with ownership of recruitment,
+                    delivery performance, process governance, and enterprise client outcomes.
+                </p>
+
+                <ul class="experience-points">
+                    <li>Own end-to-end staffing operations across contract, C2H, and full-time engagements</li>
+                    <li>Designed scalable recruitment frameworks aligned with sales and revenue goals</li>
+                    <li>Implemented AI-driven sourcing, screening, and performance reporting workflows</li>
+                    <li>Partner closely with sales, delivery, and leadership to ensure consistent fulfillment</li>
+                    <li>Drive recruiter performance using KPIs, dashboards, and quality benchmarks</li>
+                    <li>Ensure compliance across clients, vendors, and regional hiring standards</li>
+                </ul>
+
+                <div class="impact-tags">
+                    <span>Global Operations</span>
+                    <span>AI Hiring</span>
+                    <span>Operational Excellence</span>
+                </div>
+            </div>
+
+            <!-- ROLE 2 -->
+            <div class="experience-card">
+                <div class="experience-top">
+                    <div>
+                        <h3>Regional Operations Manager</h3>
+                        <span class="company">United Soft Solutions</span>
+                    </div>
+                    <span class="duration">2020 – 2024</span>
+                </div>
+
+                <p class="role-summary">
+                    Directed multi-region staffing operations, leading recruitment teams
+                    and strengthening enterprise client relationships.
+                </p>
+
+                <ul class="experience-points">
+                    <li>Led recruitment and delivery operations across multiple US regions</li>
+                    <li>Built, mentored, and scaled high-performing recruiting teams</li>
+                    <li>Standardized hiring, onboarding, and client engagement processes</li>
+                    <li>Worked with executive leadership on regional growth strategy</li>
+                    <li>Improved delivery efficiency and team productivity year over year</li>
+                </ul>
+
+                <div class="impact-tags">
+                    <span>Regional Leadership</span>
+                    <span>Team Scaling</span>
+                    <span>Process Optimization</span>
+                </div>
+            </div>
+
+            <!-- ROLE 3 -->
+            <div class="experience-card">
+                <div class="experience-top">
+                    <div>
+                        <h3>Sales Manager</h3>
+                        <span class="company">Insight Intelli Inc</span>
+                    </div>
+                    <span class="duration">2017 – 2020</span>
+                </div>
+
+                <p class="role-summary">
+                    Drove enterprise and mid-market sales growth for IT staffing
+                    and consulting services.
+                </p>
+
+                <ul class="experience-points">
+                    <li>Led new business acquisition and account expansion initiatives</li>
+                    <li>Expanded enterprise accounts through consultative selling</li>
+                    <li>Partnered with delivery teams to ensure fulfillment and retention</li>
+                    <li>Played a key role in revenue growth and account stability</li>
+                </ul>
+
+                <div class="impact-tags">
+                    <span>Enterprise Sales</span>
+                    <span>Revenue Growth</span>
+                    <span>Client Partnerships</span>
+                </div>
+            </div>
+
+            <!-- ROLE 4 -->
+            <div class="experience-card">
+                <div class="experience-top">
+                    <div>
+                        <h3>Bench Sales Consultant</h3>
+                        <span class="company">Scadea Solutions, Inc</span>
+                    </div>
+                    <span class="duration">2013 – 2015</span>
+                </div>
+
+                <p class="role-summary">
+                    Managed consultant marketing, bench utilization, and client coordination
+                    within a fast-paced IT staffing environment.
+                </p>
+
+                <ul class="experience-points">
+                    <li>Handled end-to-end bench sales for consultants across multiple technologies</li>
+                    <li>Marketed profiles to vendors, integrators, and direct clients</li>
+                    <li>Coordinated interviews, feedback cycles, and offer negotiations</li>
+                    <li>Maintained accurate consultant availability and pipeline reports</li>
+                </ul>
+
+                <div class="impact-tags">
+                    <span>Bench Sales</span>
+                    <span>Consultant Marketing</span>
+                    <span>Client Coordination</span>
+                </div>
+            </div>
+
+            <!-- ROLE 5 -->
+            <div class="experience-card">
+                <div class="experience-top">
+                    <div>
+                        <h3>Senior Sales Representative</h3>
+                        <span class="company">Air Hub</span>
+                    </div>
+                    <span class="duration">2012 – 2013</span>
+                </div>
+
+                <p class="role-summary">
+                    Supported business development and enterprise sales
+                    for telecom and value-added service solutions.
+                </p>
+
+                <ul class="experience-points">
+                    <li>Drove sales for voice, data, and telecom value-added services</li>
+                    <li>Engaged enterprise and SME clients to understand business needs</li>
+                    <li>Presented tailored solutions aligned with client requirements</li>
+                    <li>Supported pre-sales discussions and solution positioning</li>
+                </ul>
+
+                <div class="impact-tags">
+                    <span>Enterprise Sales</span>
+                    <span>Telecom Solutions</span>
+                    <span>Client Acquisition</span>
                 </div>
             </div>
 
