@@ -11,8 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-
-
 .hero {
   padding-top: 100px;
 }
@@ -459,10 +457,6 @@ footer {
   margin-bottom: 10px;
 }
 
-
-
-
-
 .expertise-section {
   padding: 150px 12%;
   background: radial-gradient(circle at top right,
@@ -626,53 +620,47 @@ footer {
   }
 }
 
+.hero {
+  padding-top: 120px;
+}
 
- 
+.hero-text h1 {
+  font-size: 2.4rem;
+}
 
+.hero-text h2 {
+  font-size: 1.3rem;
+}
 
+.cta-group {
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .hero {
-    padding-top: 120px;
-  }
+.section,
+.about-section,
+.expertise-section,
+.experience-section,
+.contact-section {
+  padding: 100px 8%;
+}
 
-  .hero-text h1 {
-    font-size: 2.4rem;
-  }
+.expertise-title,
+.exp-title.statement,
+.about-title {
+  font-size: 2rem;
+}
 
-  .hero-text h2 {
-    font-size: 1.3rem;
-  }
+.experience-card {
+  padding: 35px;
+}
 
-  .cta-group {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.contact-left h2 {
+  font-size: 2.2rem;
+}
 
-  .section,
-  .about-section,
-  .expertise-section,
-  .experience-section,
-  .contact-section {
-    padding: 100px 8%;
-  }
-
-  .expertise-title,
-  .exp-title.statement,
-  .about-title {
-    font-size: 2rem;
-  }
-
-  .experience-card {
-    padding: 35px;
-  }
-
-  .contact-left h2 {
-    font-size: 2.2rem;
-  }
-
-  .contact-card {
-    padding: 35px;
-  }
+.contact-card {
+  padding: 35px;
 }
 
 /* Small phones */
@@ -700,19 +688,18 @@ footer {
 
 .hero {
   /* This ensures the hero section takes up 100% of the screen height */
-  min-height: 100vh; 
-  
+  min-height: 100vh;
+
   /* This centers your content vertically in the middle of the screen */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   /* Keep your existing relative positioning for the background */
-  position: relative; 
-  padding-top: 0; /* Remove top padding since we are using flex-center */
+  position: relative;
+  padding-top: 0;
+  /* Remove top padding since we are using flex-center */
 }
-
-
 
 /* ===============================
    NAVBAR – SIGNATURE STYLE
@@ -821,18 +808,93 @@ footer {
   z-index: 1;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
-  .nav {
-    width: 96%;
+
+  /* 1. Hide the indicator on mobile as it won't track correctly in a vertical list */
+  .nav-indicator {
+    display: none;
   }
 
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .nav-toggle span {
+    width: 25px;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+  }
+
+  /* The actual menu hidden state */
   .nav-links {
-    gap: 16px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Hidden off-screen to the right */
+    height: 100vh;
+    width: 70%;
+    background: #080e19;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
   }
 
-  .nav-links a {
-    padding: 6px 12px;
+  /* When JS adds the .open class, slide it in */
+  .nav-links.open {
+    right: 0;
+  }
+
+
+  /* 2. Style the Toggle Button */
+  .nav-toggle {
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger::before {
+    top: -8px;
+    left: 0;
+  }
+
+  .hamburger::after {
+    bottom: -8px;
+    left: 0;
+  }
+}
+
+/* Ensure the toggle is hidden on desktop */
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none;
   }
 }
 
@@ -916,6 +978,7 @@ footer {
   from {
     transform: translateY(0) translateX(0);
   }
+
   to {
     transform: translateY(40px) translateX(30px);
   }
@@ -945,6 +1008,7 @@ footer {
     margin: 0 auto;
   }
 }
+
 /* ===============================
    EXEC STRIP – PREMIUM
    =============================== */
@@ -952,12 +1016,10 @@ footer {
 .exec-strip {
   position: relative;
   padding: 90px 12%;
-  background: linear-gradient(
-    120deg,
-    rgba(93, 169, 255, 0.08),
-    rgba(123, 92, 255, 0.04),
-    transparent
-  );
+  background: linear-gradient(120deg,
+      rgba(93, 169, 255, 0.08),
+      rgba(123, 92, 255, 0.04),
+      transparent);
   text-align: center;
 }
 
@@ -998,11 +1060,9 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
   padding: 120px 12%;
-  background: radial-gradient(
-    circle at top,
-    rgba(93, 169, 255, 0.12),
-    transparent 65%
-  );
+  background: radial-gradient(circle at top,
+      rgba(93, 169, 255, 0.12),
+      transparent 65%);
 }
 
 .stat-card {
@@ -1044,11 +1104,9 @@ footer {
   position: absolute;
   inset: -1px;
   border-radius: 30px;
-  background: linear-gradient(
-    135deg,
-    rgba(93, 169, 255, 0.35),
-    rgba(123, 92, 255, 0.35)
-  );
+  background: linear-gradient(135deg,
+      rgba(93, 169, 255, 0.35),
+      rgba(123, 92, 255, 0.35));
   opacity: 0;
   z-index: -1;
   transition: opacity 0.4s ease;
@@ -1072,6 +1130,7 @@ footer {
     font-size: 2.6rem;
   }
 }
+
 /* ===============================
    ABOUT – EXECUTIVE STYLE
    =============================== */
@@ -1186,17 +1245,16 @@ footer {
     gap: 25px;
   }
 }
+
 /* ===============================
    EXECUTIVE EXPERTISE
    =============================== */
 
 .expertise-section {
   padding: 150px 12%;
-  background: radial-gradient(
-    circle at top right,
-    rgba(93, 169, 255, 0.1),
-    transparent 65%
-  );
+  background: radial-gradient(circle at top right,
+      rgba(93, 169, 255, 0.1),
+      transparent 65%);
 }
 
 .expertise-header {
@@ -1269,17 +1327,16 @@ footer {
     margin-bottom: 60px;
   }
 }
+
 /* ===============================
    EXPERIENCE – EXECUTIVE
    =============================== */
 
 .experience-section {
   padding: 150px 12%;
-  background: radial-gradient(
-    circle at top left,
-    rgba(93, 169, 255, 0.08),
-    transparent 65%
-  );
+  background: radial-gradient(circle at top left,
+      rgba(93, 169, 255, 0.08),
+      transparent 65%);
 }
 
 .experience-header {
@@ -1400,6 +1457,7 @@ footer {
     gap: 8px;
   }
 }
+
 /* ===============================
    CONTACT – SAFE VISUAL ENHANCEMENT
    =============================== */
@@ -1414,8 +1472,8 @@ footer {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 20%, rgba(93,169,255,0.18), transparent 45%),
-    radial-gradient(circle at 80% 80%, rgba(123,92,255,0.18), transparent 45%);
+    radial-gradient(circle at 20% 20%, rgba(93, 169, 255, 0.18), transparent 45%),
+    radial-gradient(circle at 80% 80%, rgba(123, 92, 255, 0.18), transparent 45%);
   pointer-events: none;
   z-index: 0;
 }
@@ -1449,7 +1507,7 @@ footer {
 /* Right card – premium glass */
 .contact-card {
   position: relative;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .contact-card::before {
@@ -1457,12 +1515,10 @@ footer {
   position: absolute;
   inset: 0;
   border-radius: 30px;
-  background: linear-gradient(
-    135deg,
-    rgba(93,169,255,0.12),
-    rgba(123,92,255,0.08),
-    transparent
-  );
+  background: linear-gradient(135deg,
+      rgba(93, 169, 255, 0.12),
+      rgba(123, 92, 255, 0.08),
+      transparent);
   opacity: 0;
   transition: opacity 0.4s ease;
   pointer-events: none;
@@ -1485,12 +1541,10 @@ footer {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,0.5),
-    transparent
-  );
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.5),
+      transparent);
   transition: left 0.6s ease;
 }
 
