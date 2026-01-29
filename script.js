@@ -83,41 +83,41 @@ window.addEventListener("scroll", () => {
 const observerOptions = { threshold: 0.2 };
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-            
-            // If it's the stats section, start the counter
-            if (entry.target.classList.contains('stats')) {
-                startCounters();
-            }
-        }
-    });
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+
+      // If it's the stats section, start the counter
+      if (entry.target.classList.contains('stats')) {
+        startCounters();
+      }
+    }
+  });
 }, observerOptions);
 
 document.querySelectorAll(".reveal, .stats").forEach(el => observer.observe(el));
 
 function startCounters() {
-    document.querySelectorAll("[data-count]").forEach(counter => {
-        if (counter.classList.contains('counted')) return; // Prevent re-running
-        counter.classList.add('counted');
-        
-        let target = +counter.dataset.count;
-        let count = 0;
-        let increment = target / 50; 
+  document.querySelectorAll("[data-count]").forEach(counter => {
+    if (counter.classList.contains('counted')) return; // Prevent re-running
+    counter.classList.add('counted');
 
-        const update = () => {
-            count += increment;
-            if (count < target) {
-                counter.innerText = Math.floor(count);
-                setTimeout(update, 20);
-            } else {
-                counter.innerText = target + (target === 14 ? "+" : ""); // Adds + for years
-            }
-        };
-        update();
-    });
-}window.addEventListener("scroll", () => {
+    let target = +counter.dataset.count;
+    let count = 0;
+    let increment = target / 50;
+
+    const update = () => {
+      count += increment;
+      if (count < target) {
+        counter.innerText = Math.floor(count);
+        setTimeout(update, 20);
+      } else {
+        counter.innerText = target + (target === 14 ? "+" : ""); // Adds + for years
+      }
+    };
+    update();
+  });
+} window.addEventListener("scroll", () => {
   const nav = document.querySelector(".nav");
   if (window.scrollY > 50) {
     nav.classList.add("scrolled");
@@ -153,4 +153,21 @@ navItems.forEach(link => {
 window.addEventListener("load", () => {
   const active = document.querySelector(".nav-links a.active");
   if (active) moveIndicator(active);
+});
+
+const toggleBtn = document.getElementById('navToggle');
+const menu = document.getElementById('navLinks');
+
+toggleBtn.addEventListener('click', () => {
+  // This adds/removes a class called 'open' when you click
+  menu.classList.toggle('open');
+  toggleBtn.classList.toggle('active');
+});
+
+// Close the menu automatically when you click a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('open');
+    toggleBtn.classList.remove('active');
+  });
 });
