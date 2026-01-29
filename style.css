@@ -13,26 +13,6 @@ body {
 
 
 
-.nav-links a {
-  text-decoration: none;
-  color: #cfd8ff;
-  font-size: 1rem;
-  font-weight: 500;
-  position: relative;
-  transition: color 0.3s ease;
-}
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background: #5da9ff;
-  transition: width 0.3s ease;
-}
-
-
 .hero {
   padding-top: 100px;
 }
@@ -479,95 +459,9 @@ footer {
   margin-bottom: 10px;
 }
 
-/* NAV WRAPPER */
-
-
-/* CONTAINER */
-.nav-container {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 5%; /* Adjusted padding to prevent edge squashing */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* BRAND */
-.brand {
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  color: #ffffff;
-}
-
-.brand span {
-  color: #7b5cff;
-}
-
-/* LINKS */
 
 
 
-.nav-links a {
-  position: relative;
-  color: #cfd8ff;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-/* Hover underline */
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #5da9ff, #7b5cff);
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #ffffff;
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after {
-  width: 100%;
-}
-
-/* ACTIVE LINK */
-.nav-links a.active {
-  color: #ffffff;
-}
-
-.nav-links a.active::after {
-  width: 100%;
-}
-
-/* CTA BUTTON */
-.nav-cta {
-  margin-left: 20px; /* Extra space before the button */
-  padding: 10px 24px;
-  background: linear-gradient(135deg, #4f8cff, #7b5cff);
-  color: white !important;
-  border-radius: 50px;
-  font-weight: 600;
-  box-shadow: 0 10px 20px rgba(79, 140, 255, 0.3);
-}
-
-/* Remove underline from the button specifically */
-.nav-cta::after {
-  display: none !important;
-}
-
-.nav-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 45px rgba(93, 169, 255, 0.6);
-}
 
 .expertise-section {
   padding: 150px 12%;
@@ -732,36 +626,9 @@ footer {
   }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-
-  .nav-container {
-    padding: 0 25px;
-  }
-
- .nav-links {
-  display: flex; /* Makes them sit in a row */
-  gap: 30px;     /* This adds the space between Home, About, etc. */
-  align-items: center;
-  list-style: none;
-}
 
  
 
-  /* Ensure the header spans the full width */
-  .nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90px; /* increased slightly for better touch target */
-  z-index: 9999; /* This forces it above the Hero image */
-  background: rgba(8, 14, 25, 0.9); /* Slightly darker for readability */
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  display: flex; /* Ensures vertical centering */
-  align-items: center;
-}
 
 
   .hero {
@@ -828,29 +695,7 @@ footer {
     gap: 25px;
   }
 }
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    backdrop-filter: blur(10px);
-    background: rgba(0,0,0,0.4);
-    z-index: 100;
-}
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-}
 /* style.css */
 
 .hero {
@@ -866,92 +711,131 @@ nav a {
   position: relative; 
   padding-top: 0; /* Remove top padding since we are using flex-center */
 }
-/* --- Floating Island Nav --- */
+
+
+
+/* ===============================
+   NAVBAR – SIGNATURE STYLE
+   =============================== */
+
 .nav {
   position: fixed;
-  top: 20px; /* Floats it away from the top edge */
+  top: 18px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%; /* Slimmer than full width */
-  max-width: 1200px;
-  height: 70px;
+  width: 92%;
+  max-width: 1250px;
+  height: 74px;
   z-index: 9999;
-  
-  /* Glassmorphism Effect */
-  background: rgba(13, 20, 33, 0.7); 
-  backdrop-filter: blur(15px) saturate(180%);
-  -webkit-backdrop-filter: blur(15px) saturate(180%);
-  
-  /* Subtle border and glow */
+
+  background: rgba(12, 18, 32, 0.75);
+  backdrop-filter: blur(18px) saturate(180%);
+  border-radius: 100px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 100px; /* Capsule shape */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  
-  display: flex;
-  align-items: center;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  transition: all 0.35s ease;
 }
 
-/* Shrink effect when scrolling */
+/* Scroll state */
 .nav.scrolled {
   top: 10px;
-  height: 60px;
-  width: 85%;
-  background: rgba(8, 14, 25, 0.9);
+  height: 62px;
+  background: rgba(8, 14, 25, 0.92);
 }
 
+/* Container */
 .nav-container {
-  width: 100%;
-  padding: 0 30px;
+  height: 100%;
+  padding: 0 32px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
+/* Brand */
 .brand {
-  font-size: 1.4rem; /* Slightly smaller for the island look */
+  font-size: 1.5rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #fff, #8fa8ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.5px;
 }
 
+.brand span {
+  color: #7b5cff;
+}
+
+/* Links */
 .nav-links {
   display: flex;
-  gap: 25px;
   align-items: center;
+  gap: 26px;
+  list-style: none;
+  position: relative;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: rgba(207, 216, 255, 0.8);
+  position: relative;
+  padding: 8px 16px;
+  border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
+  color: rgba(207, 216, 255, 0.85);
+  text-decoration: none;
   transition: all 0.3s ease;
+  z-index: 2;
 }
 
-/* Modern Pill-shaped Hover */
-.nav-links a:not(.nav-cta):hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 8px 15px;
-  border-radius: 20px;
+/* Hover feel */
+.nav-links a:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
 }
 
-/* Update the Connect Button to fit the capsule */
+/* CTA */
 .nav-cta {
-  padding: 10px 25px;
-  background: #fff; /* High contrast white button */
-  color: #050b12 !important;
-  border-radius: 50px;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #5da9ff, #7b5cff);
+  color: #fff !important;
   font-weight: 600;
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(93, 169, 255, 0.4);
 }
 
 .nav-cta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 45px rgba(123, 92, 255, 0.6);
 }
+
+/* Active Indicator */
+.nav-indicator {
+  position: absolute;
+  bottom: 12px;
+  height: 32px;
+  border-radius: 20px;
+  background: rgba(93, 169, 255, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(93, 169, 255, 0.35);
+  transition: all 0.35s ease;
+  z-index: 1;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav {
+    width: 96%;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
+    padding: 6px 12px;
+  }
+}
+
 /* ===============================
    HERO ENHANCEMENTS
    =============================== */
@@ -1517,123 +1401,99 @@ nav a {
   }
 }
 /* ===============================
-   NAVBAR – SIGNATURE STYLE
+   CONTACT – SAFE VISUAL ENHANCEMENT
    =============================== */
 
-.nav {
-  position: fixed;
-  top: 18px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 92%;
-  max-width: 1250px;
-  height: 74px;
-  z-index: 9999;
-
-  background: rgba(12, 18, 32, 0.75);
-  backdrop-filter: blur(18px) saturate(180%);
-  border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
-
-  transition: all 0.35s ease;
-}
-
-/* Scroll state */
-.nav.scrolled {
-  top: 10px;
-  height: 62px;
-  background: rgba(8, 14, 25, 0.92);
-}
-
-/* Container */
-.nav-container {
-  height: 100%;
-  padding: 0 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* Background glow (non-intrusive) */
+.contact-section {
   position: relative;
+  overflow: hidden;
 }
 
-/* Brand */
-.brand {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+.contact-enhanced-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(93,169,255,0.18), transparent 45%),
+    radial-gradient(circle at 80% 80%, rgba(123,92,255,0.18), transparent 45%);
+  pointer-events: none;
+  z-index: 0;
 }
 
-.brand span {
-  color: #7b5cff;
-}
-
-/* Links */
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 26px;
-  list-style: none;
+/* Ensure content stays above glow */
+.contact-container {
   position: relative;
-}
-
-.nav-links a {
-  position: relative;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: rgba(207, 216, 255, 0.85);
-  text-decoration: none;
-  transition: all 0.3s ease;
   z-index: 2;
 }
 
-/* Hover feel */
-.nav-links a:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.06);
+/* Left text refinement */
+.contact-left h2 {
+  background: linear-gradient(90deg, #ffffff, #9bb6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* CTA */
-.nav-cta {
-  padding: 10px 22px;
-  background: linear-gradient(135deg, #5da9ff, #7b5cff);
-  color: #fff !important;
-  font-weight: 600;
-  box-shadow: 0 10px 25px rgba(93, 169, 255, 0.4);
+.contact-intro {
+  line-height: 1.9;
 }
 
-.nav-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 45px rgba(123, 92, 255, 0.6);
+/* Contact info hover polish */
+.contact-item a {
+  transition: color 0.3s ease;
 }
 
-/* Active Indicator */
-.nav-indicator {
+.contact-item a:hover {
+  color: #9bb6ff;
+}
+
+/* Right card – premium glass */
+.contact-card {
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact-card::before {
+  content: "";
   position: absolute;
-  bottom: 12px;
-  height: 32px;
-  border-radius: 20px;
-  background: rgba(93, 169, 255, 0.18);
-  box-shadow: inset 0 0 0 1px rgba(93, 169, 255, 0.35);
-  transition: all 0.35s ease;
-  z-index: 1;
+  inset: 0;
+  border-radius: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(93,169,255,0.12),
+    rgba(123,92,255,0.08),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .nav {
-    width: 96%;
-  }
+.contact-card:hover::before {
+  opacity: 1;
+}
 
-  .nav-links {
-    gap: 16px;
-  }
+/* CTA button emphasis */
+.contact-cta {
+  position: relative;
+  overflow: hidden;
+}
 
-  .nav-links a {
-    padding: 6px 12px;
-  }
+.contact-cta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.5),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.contact-cta:hover::after {
+  left: 100%;
 }
